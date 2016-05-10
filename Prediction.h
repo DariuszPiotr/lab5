@@ -8,5 +8,13 @@
 
 class Prediction : Sample
 {
+	private:
+		int prediction;
 
+	public:
+			Prediction(int a,vector<float> b,int pred);
+			Prediction(Sample & k,int pred);
+			static float accuracy(vector<Prediction*> vec_pred);
+			int getter_prediction() const
+			{return prediction;}
 };
