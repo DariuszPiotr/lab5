@@ -53,7 +53,7 @@ int main(int argc, char const *argv[])
 				v.erase(v.begin());
 				Sample testowy(x,v);
 				
-				wines.push_back(&testowy);
+				wines.push_back(new Sample(x,v));
 				v.clear();
 
 			}
